@@ -31,12 +31,16 @@ public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
+	
+
+	
+	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		return "home";
 	}
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/welcome", method = RequestMethod.GET)
 	public String welcome(Locale locale, Model model) {
 		Facebook fb = facebook.getApi();
 

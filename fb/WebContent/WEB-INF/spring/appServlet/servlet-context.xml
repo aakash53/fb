@@ -24,7 +24,9 @@
 	<context:component-scan base-package="com.credera.springsocial" />	
 	
     <beans:bean class="org.springframework.social.connect.web.ProviderSignInController">
-        <beans:property name="signInUrl" value="/login" />
+          <beans:property name="signInUrl" value="/login" /> 
+     
+  				   
     </beans:bean>
     
 </beans:beans>
